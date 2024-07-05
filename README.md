@@ -1,59 +1,46 @@
 # Space Taxi Game
 
-Welcome to the Space Taxi Game! This README file provides instructions on how to set up, run, and play the game.
+## Description
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Prerequisites](#prerequisites)
-3. [Installation](#installation)
-4. [Running the Game](#running-the-game)
-5. [Game Controls](#game-controls)
-6. [Game Mechanics](#game-mechanics)
-7. [Assets](#assets)
-8. [Troubleshooting](#troubleshooting)
+Space Taxi is a simple game where you control a taxi that moves up and down on the screen. Your objective is to land on platforms and avoid falling off the screen. Each successful landing on a platform increases your score.
 
-## Introduction
-Space Taxi is a 2D arcade-style game where you control a taxi navigating through space. Your objective is to land safely on platforms while managing fuel and avoiding obstacles.
+## How to Play
 
-## Prerequisites
-Before running the game, ensure you have the following installed on your system:
-- Python 3.6 or higher
-- Pygame library
+1. **Launch the Game**
+   - Run the game script to start the game. Ensure you have Python and Pygame installed.
+
+2. **Control the Taxi**
+   - The taxi moves up and down automatically.
+   - Use the left and right arrow keys to move the platforms horizontally.
+
+3. **Scoring**
+   - Land the taxi on the red platforms to increase your score.
+   - Each successful landing on a platform adds to your score.
+
+4. **Game Over**
+   - The game ends if the taxi falls off the bottom of the screen.
+   - When the game is over, a "Game Over" message will be displayed.
 
 ## Installation
-1. **Clone the repository:**
-    ```sh
-    git clone https://github.com/moelhaj996/Taxi-gam.git
-    cd Taxi-gam
-    ```
 
-2. **Install the Pygame library:**
-    ```sh
-    pip install pygame
-    ```
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/moelhaj996/Taxi-gam.git
+   ```
+2. **Install Pygame**
+   ```sh
+   pip install pygame
+   ```
 
-3. **Ensure the asset files are in the correct directory:**
-    The sound files (`thrust.wav`, `land.wav`, `game_over.wav`) should be located in the `assets/sounds` directory.
+## Running the Game
 
-Game Controls
-UP Arrow: Thrust upward
-LEFT Arrow: Thrust left
-RIGHT Arrow: Thrust right
-Game Mechanics
-Gravity: Constantly pulls the taxi downwards.
-Thrust: Use the arrow keys to apply thrust and navigate.
-Fuel: Limited fuel supply. Manage it wisely to avoid running out.
-Platforms: Land on red platforms to refuel and gain points.
-Game Over: If you fall off the screen or run out of fuel, the game ends.
-Assets
-Ensure the following sound files are present in the assets/sounds directory:
+Navigate to the game directory and run the following command:
+```sh
+python main.py
+```
 
-thrust.wav
-land.wav
-game_over.wav
-Troubleshooting
-Sound Issues: If sound files fail to load, check the paths and ensure the files are in the correct directory.
-Game Crashes: Ensure you have the correct version of Python and Pygame installed.
-For further assistance, feel free to open an issue on the GitHub repository.
+## Sounds
 
-Enjoy the game! 🚀
+Ensure the sound files (`thrust.wav`, `land.wav`, `game_over.wav`) are located in the `assets/sounds` directory as specified in the code.
+
+Enjoy playing Space Taxi and aim for the highest score!
