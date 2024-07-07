@@ -31,7 +31,6 @@ Space Taxi is a simple game where you control a taxi that moves up and down on t
 pip install -r requirements.txt
 
 
-## Ensure the sound files  (thrust.wav, land.wav, game_over.wav) are located in the assets/sounds directory as specified in the code.
 
 ## Sound Credits
 All sound effects used in this game were sourced from  Freesound.org.
