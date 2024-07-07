@@ -61,18 +61,26 @@ The CI is configured using GitHub Actions. The configuration file is located at 
 
 
 
+# Project Directory Structure
 
-This structure includes:
-
-- `.github/workflows/python-app.yml` - GitHub Actions workflow for continuous integration.
-- `assets/` - Directory containing game assets.
-  - `images/` - Images used in the game.
-    - `taxi.png`, `platform.png`, `background.png` - Image files.
-  - `sounds/` - Sound files used in the game.
-    - `thrust.wav`, `land.wav`, `game_over.wav` - Sound files.
-- `tests/` - Directory containing test files.
-  - `__init__.py`, `test_game.py` - Test scripts.
-- `main.py` - Main script to run the game.
-- `requirements.txt` - List of dependencies.
-- `README.md` - Project documentation.
+```mermaid
+graph TD
+    A[project/] --> B[.github/]
+    B --> C[workflows/]
+    C --> D[python-app.yml]
+    A --> E[assets/]
+    E --> F[images/]
+    F --> G[taxi.png]
+    F --> H[platform.png]
+    F --> I[background.png]
+    E --> J[sounds/]
+    J --> K[thrust.wav]
+    J --> L[land.wav]
+    J --> M[game_over.wav]
+    A --> N[tests/]
+    N --> O[__init__.py]
+    N --> P[test_game.py]
+    A --> Q[main.py]
+    A --> R[requirements.txt]
+    A --> S[README.md]
 
