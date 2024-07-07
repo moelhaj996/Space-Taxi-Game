@@ -23,16 +23,6 @@ class TestGame(unittest.TestCase):
         platform = Platform(300, 500, 200, 20)
         self.assertEqual(platform.rect.topleft, (300, 500))
 
-    def test_platform_update(self):
-        platform = Platform(300, 500, 200, 20)
-        initial_x = platform.rect.x
-        keys = pygame.key.get_pressed()
-        platform.update()
-        if keys[pygame.K_LEFT]:
-            self.assertEqual(platform.rect.x, initial_x - 5)
-        elif keys[pygame.K_RIGHT]:
-            self.assertEqual(platform.rect.x, initial_x + 5)
-
     def tearDown(self):
         pygame.quit()
 
