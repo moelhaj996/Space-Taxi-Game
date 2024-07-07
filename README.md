@@ -39,13 +39,13 @@ python main.py
 Sounds
 Ensure the sound files (thrust.wav, land.wav, game_over.wav) are located in the assets/sounds directory as specified in the code.
 
-Sound Credits
+##Sound Credits
 All sound effects used in this game were sourced from Freesound.org.
 
-Image Credits
+##Image Credits
 Stars Background: The background image is sourced from OpenGameArt.
-Space Shuttle Icon: Space Shuttle Icon
-Platform Icon: Platform Icon
+taxi : taxi Icon
+Platform : Platform Icon
 Acknowledgements
 This project was assisted by using ChatGPT, a language model developed by OpenAI.
 ChatGPT was used to check and improve the code quality.
