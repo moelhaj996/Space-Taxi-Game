@@ -6,6 +6,7 @@ pygame.init()
 
 script_dir = os.path.dirname(__file__)
 sound_dir = os.path.join(script_dir, 'assets', 'sounds')
+image_dir = os.path.join(script_dir, 'assets', 'images')
 
 try:
     thrust_sound = pygame.mixer.Sound(os.path.join(sound_dir, 'thrust.wav'))
@@ -22,17 +23,16 @@ pygame.display.set_caption('Space Taxi')
 clock = pygame.time.Clock()
 
 class Taxi(pygame.sprite.Sprite):
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
-        self.image = pygame.Surface((50, 30))
-        self.image.fill((255, 255, 0))
+        self.image = pygame.image.load(os.path.join(image_dir, 'taxi.png')).convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.center = (screen_width // 2, screen_height // 2)
         self.velocity = pygame.math.Vector2(0, 5)
         self.direction = 1
         self.score = 0
 
-    def update(self):
+    def update(self) -> bool:
         if self.rect.top <= 0 or self.rect.bottom >= screen_height:
             self.direction *= -1
 
@@ -58,14 +58,14 @@ class Taxi(pygame.sprite.Sprite):
         return True
 
 class Platform(pygame.sprite.Sprite):
-    def __init__(self, x, y, width, height):
+    def __init__(self, x: int, y: int, width: int, height: int) -> None:
         super().__init__()
-        self.image = pygame.Surface((width, height))
-        self.image.fill((255, 0, 0))
+        self.image = pygame.image.load(os.path.join(image_dir, 'platform.png')).convert_alpha()
+        self.image = pygame.transform.scale(self.image, (width, height))
         self.rect = self.image.get_rect()
         self.rect.topleft = (x, y)
 
-    def update(self):
+    def update(self) -> None:
         keys = pygame.key.get_pressed()
         if keys[pygame.K_LEFT]:
             self.rect.x -= 5
@@ -77,6 +77,13 @@ class Platform(pygame.sprite.Sprite):
         if self.rect.right > screen_width:
             self.rect.right = screen_width
 
+class Background:
+    def __init__(self) -> None:
+        self.image = pygame.image.load(os.path.join(image_dir, 'background.png')).convert()
+
+    def draw(self, surface: pygame.Surface) -> None:
+        surface.blit(self.image, (0, 0))
+
 platforms = pygame.sprite.Group()
 platform = Platform(300, 500, 200, 20)
 platforms.add(platform)
@@ -86,6 +93,8 @@ taxi = Taxi()
 all_sprites = pygame.sprite.Group()
 all_sprites.add(taxi)
 all_sprites.add(platforms)
+
+background = Background()
 
 running = True
 game_over = False
@@ -103,8 +112,7 @@ while running:
         if taxi.rect.top > platform.rect.bottom:
             game_over = True
 
-        screen.fill((0, 0, 0))
-
+        background.draw(screen)
         all_sprites.draw(screen)
 
         font = pygame.font.Font(None, 36)
