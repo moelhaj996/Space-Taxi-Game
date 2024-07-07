@@ -26,18 +26,12 @@ Space Taxi is a simple game where you control a taxi that moves up and down on t
 1. **Clone the Repository**
    ```sh
    git clone https://github.com/moelhaj996/Space-Taxi-Game
-Install Dependencies
-sh
-Copy code
-pip install -r requirements.txt
-Running the Game
-Navigate to the game directory and run the following command:
+## Install Dependencies
 
-sh
-Copy code
-python main.py
-Sounds
-Ensure the sound files (thrust.wav, land.wav, game_over.wav) are located in the assets/sounds directory as specified in the code.
+pip install -r requirements.txt
+
+
+## Ensure the sound files  (thrust.wav, land.wav, game_over.wav) are located in the assets/sounds directory as specified in the code.
 
 ## Sound Credits
 All sound effects used in this game were sourced from  Freesound.org.
@@ -45,18 +39,17 @@ All sound effects used in this game were sourced from  Freesound.org.
 ## Image Credits
 All images are sourced from OpenGameArt.
 ## Acknowledgements
-This project was assisted by using ChatGPT, a language model developed by OpenAI.
-ChatGPT was used to check and improve the code quality.
+This project was assisted by using ChatGPT,it was used to check and improve the code quality.
 Requirements
 Python 3.x
 Pygame
 Type Annotations
 The code includes type annotations for better code quality and readability.
 
-Continuous Integration:
+## Continuous Integration:
 This project uses Continuous Integration to ensure code quality and functionality.
 
-Setting Up CI
+## Setting Up CI
 The CI is configured using GitHub Actions. The configuration file is located at .github/workflows/python-app.yml.
 
 
