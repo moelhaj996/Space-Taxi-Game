@@ -25,7 +25,7 @@ Space Taxi is a simple game where you control a taxi that moves up and down on t
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/moelhaj996/Taxi-gam.git
+   git clone https://github.com/moelhaj996/Space-Taxi-Game
 Install Dependencies
 sh
 Copy code
