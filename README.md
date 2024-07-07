@@ -40,7 +40,7 @@ Sounds
 Ensure the sound files (thrust.wav, land.wav, game_over.wav) are located in the assets/sounds directory as specified in the code.
 
 ## Sound Credits
-All sound effects used in this game were sourced from Freesound.org.
+All sound effects used in this game were sourced from  Freesound.org.
 
 ## Image Credits
 All images are sourced from OpenGameArt.
