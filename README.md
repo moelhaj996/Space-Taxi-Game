@@ -43,9 +43,7 @@ Ensure the sound files (thrust.wav, land.wav, game_over.wav) are located in the 
 All sound effects used in this game were sourced from Freesound.org.
 
 ## Image Credits
-Stars Background: The background image is sourced from OpenGameArt.
-taxi : taxi Icon
-Platform : Platform Icon
+All images are sourced from OpenGameArt.
 ## Acknowledgements
 This project was assisted by using ChatGPT, a language model developed by OpenAI.
 ChatGPT was used to check and improve the code quality.
