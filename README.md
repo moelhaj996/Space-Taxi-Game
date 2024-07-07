@@ -53,7 +53,7 @@ Pygame
 Type Annotations
 The code includes type annotations for better code quality and readability.
 
-Continuous Integration
+Continuous Integration:
 This project uses Continuous Integration to ensure code quality and functionality.
 
 Setting Up CI
