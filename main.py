@@ -4,7 +4,8 @@ import sys
 
 pygame.init()
 
-sound_dir = '/Users/mohamedelhajsuliman/PycharmProjects/taxi game/assets/sounds'
+script_dir = os.path.dirname(__file__)
+sound_dir = os.path.join(script_dir, 'assets', 'sounds')
 
 try:
     thrust_sound = pygame.mixer.Sound(os.path.join(sound_dir, 'thrust.wav'))
