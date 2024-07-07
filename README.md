@@ -58,3 +58,25 @@ This project uses Continuous Integration to ensure code quality and functionalit
 
 Setting Up CI
 The CI is configured using GitHub Actions. The configuration file is located at .github/workflows/python-app.yml.
+
+
+
+project/
+├── .github/
+│   └── workflows/
+│       └── python-app.yml
+├── assets/
+│   ├── images/
+│   │   ├── taxi.png
+│   │   ├── platform.png
+│   │   ├── background.png
+│   ├── sounds/
+│   │   ├── thrust.wav
+│   │   ├── land.wav
+│   │   ├── game_over.wav
+├── tests/
+│   ├── __init__.py
+│   └── test_game.py
+├── main.py
+├── requirements.txt
+├── README.md
